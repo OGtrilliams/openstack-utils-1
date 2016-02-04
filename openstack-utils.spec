@@ -2,7 +2,7 @@
 
 Name:           openstack-utils
 Version:        2015.2
-Release:        %{rel}%{?dist}
+Release:        %{rel}%{?dist}.1
 Summary:        Helper utilities for OpenStack services
 URL:            https://github.com/redhat-openstack/openstack-utils
 Source0:        https://github.com/redhat-openstack/%{name}/archive/%{version}-%{rel}.tar.gz#/%{name}-%{version}-%{rel}.tar.gz
@@ -32,6 +32,9 @@ install -p -D -m 644 man/*.1 %{buildroot}%{_mandir}/man1/
 %{_mandir}/man1/*.1.gz
 
 %changelog
+* Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2015.2-1.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
 * Mon Dec 07 2015 Pádraig Brady <pbrady@redhat.com> - 2015.2-1
 - openstack-status: list all nova optional services
 - openstack-status: list tuskar and ironic services
