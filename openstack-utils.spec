@@ -1,8 +1,8 @@
 %global rel 1
 
 Name:           openstack-utils
-Version:        2015.2
-Release:        %{rel}%{?dist}.1
+Version:        2016.1
+Release:        %{rel}%{?dist}
 Summary:        Helper utilities for OpenStack services
 URL:            https://github.com/redhat-openstack/openstack-utils
 Source0:        https://github.com/redhat-openstack/%{name}/archive/%{version}-%{rel}.tar.gz#/%{name}-%{version}-%{rel}.tar.gz
@@ -32,6 +32,11 @@ install -p -D -m 644 man/*.1 %{buildroot}%{_mandir}/man1/
 %{_mandir}/man1/*.1.gz
 
 %changelog
+* Mon Jul 11 2016 Haikel Guemar <hguemar@fedoraproject.org> 2016.1-1
+- Update to 2016.1
+- Drop openstack-db (out-of-date)
+- Minor bugfixes to openstack-status
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2015.2-1.1
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
