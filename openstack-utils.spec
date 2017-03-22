@@ -1,7 +1,7 @@
 %global rel 1
 
 Name:           openstack-utils
-Version:        2016.1
+Version:        2017.1
 Release:        %{rel}%{?dist}
 Summary:        Helper utilities for OpenStack services
 URL:            https://github.com/redhat-openstack/openstack-utils
@@ -32,6 +32,10 @@ install -p -D -m 644 man/*.1 %{buildroot}%{_mandir}/man1/
 %{_mandir}/man1/*.1.gz
 
 %changelog
+* Wed Mar 22 2017 Alan Pevec <alan.pevec@redhat.com> 2017.1-1
+- Update to 2017.1
+- keystone command is no longer part of openstack
+
 * Mon Jul 11 2016 Haikel Guemar <hguemar@fedoraproject.org> 2016.1-1
 - Update to 2016.1
 - Drop openstack-db (out-of-date)
